@@ -1,0 +1,25 @@
+Big Data Conference: Planning
+
+* Framing: data curation as a process – workflow
+o Series of hands-on practices
+o Walk-thru of our steps – clean workflow
+o Connection to our central narrative
+* Introduction
+o What is Python?
+o How do you deal with unstructured data (vs. numerical data)?
+o How do you define a Research Q (how to pull right kind of data)?
+* Workflow steps
+1. Fetch the data (APIs?)
+2. Convert it (into csv?)
+3. Merge with Compustat(?) – or look at charts, pre-post Bitcoin drop
+4. Create a Pandas dataframe
+5. Convert text into numbers (DTM?)
+6. Use text blob to run a basic count / analysis
+7. Visualize it
+* Reflections
+o Does what we’ve presented seem doable?
+o Other questions, concerns?
+o How might you use this approach & workflow in your own research?
+* Conclusion
+o Parting words form presenters: next steps for participants
+
