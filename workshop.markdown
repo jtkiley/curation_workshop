@@ -14,16 +14,17 @@ title: 'Data Curation Workshop'
 
 # A philosophy of data management.
 
-Data management (or curation) is a process of transforming data from an initial state to a research-appropriate state.
-We can think of is as a highly iterative process with four interrelated steps: access, cleaning, selection, and analysis.
+Data management (or curation) is a process of transforming data from an initial, raw state to a research-appropriate state.
+We can think of this as a highly iterative process with four interrelated steps: access, cleaning, selection, and analysis.
 In general, we seek to move from the data we can get toward data that we can use to examine our theoretical questions.
 To best promote that goal in a reproducible and robust way, we suggest four principles and some associated implications.
 
 1. **Others (and you) should be able to reproduce your study.**
 1. **Data management errors happen, and you should be able to detect and repair them easily.**
-1. **Data management is iterative and ongoing, and practices should match.**
+1. **Data management is iterative and ongoing, and different processes and practices should match.**
 1. **Good data tools are built well once and used repeatedly.**
 
+While what we recommend below is specific to Python and dataframes (which we'll be introducing you to today), it also applies good practice basic to most data-intensive research processes outlined above.
 
 # Implications for practices.
 
@@ -33,4 +34,4 @@ To best promote that goal in a reproducible and robust way, we suggest four prin
 1. **Your data should always be built by running your code as is.** This practice ensures that your code is authoritative. That goal is undercut if you simply cut and paste commands without ensuring that the script runs cleanly. In pandas and Jupyter, use "Kernel:Restart Kernel and Run All Cells." In Stata, use the `do` command to run your `do` file.
 1. **When naming your clean dataset, use a name that uniquely identifies it.** In many studies, one co-author will perform most or all of the data management, and others may use it to run models. Like a software release, you want versions distributed to the team to be right and relatively stable. I find that the date and project name work well (e.g., `20180418_workshop.dta`). Whenever discussing results or changes, asking about the data version can help clarify whether you are all working with the same underlying data.
 1. **Use file-sharing services (e.g., Dropbox) for distribution and storage, not work-in-progress files.** Many project teams find themselves confused about the latest draft or the latest data when the dropbox folder is used "live." While version control (e.g., git and Github) can solve this problem and provide a number of helpful productivity and documentation benefits, it's still a software development tool that assumes a lot knowledge of its users.
-1. **(More advanced) Capturing your known good code to reuse makes future projects better.** I do this in two ways. First, for some common datasets, I download a new copy once a year and process it with the same code as the prior year (with any needed changes). This prevents duplicated code in my projects, and it helps manage the lack of data versioning and change transparency in most of our datasets. Second, I write general purpose tools for reuse that I capture in a small, private python package. For example, these do things like read and write lists for pulling data (e.g., event lists for abnormal returns data).
+1. **(More advanced) Capturing your known good code to reuse makes future projects better.** We recommend two effective approaches. First, for some common datasets, you can download a new copy once a year and process it with the same code as the prior year (with any needed changes). This prevents duplicated code in projects, and it helps manage the lack of data versioning and change transparency in most of our datasets. Second, you can write general purpose tools for reuse that you can capture in a small, private python package. For example, these do things like read and write lists for pulling data (e.g., event lists for abnormal returns data).
