@@ -21,7 +21,7 @@ To best promote that goal in a reproducible and robust way, we suggest four prin
 
 1. **Others (and you) should be able to reproduce your study.**
 1. **Data management errors happen, and you should be able to detect and repair them easily.**
-1. **Data management is iterative and ongoing, and different processes and practices should match.**
+1. **Data management is iterative and ongoing, and practices should be designed to match this nonlinear flow.**
 1. **Good data tools are built well once and used repeatedly.**
 
 While what we recommend below is specific to Python and dataframes (which we'll be introducing you to today), it also applies good practice basic to most data-intensive research processes outlined above.
