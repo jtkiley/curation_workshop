@@ -3,6 +3,18 @@ title: 'Data Curation: Meeting notes'
 
 ---
 
+# 2018-03-16 (TH, JK, HT)
+
+- Software
+	- Just conda.
+	- Installing textblob is easy in conda.
+- Presentation
+	- Can quicktime record screens?
+- Next steps
+	- (Jason) Slides.
+	- (Tim): Next round on notebook; iterate from there with (Hovig/Laura).
+
+
 # 2018-02-21 (TH, JK, HT)
 
 - Framing: data curation as a process – workflow
